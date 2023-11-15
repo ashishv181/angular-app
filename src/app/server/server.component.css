@@ -1,11 +1,16 @@
 p{
-    border: 1px solid pink;
+    border: 1px solid green;
     border-radius: 20px;
     width: 50%;
     margin-left: 25%;
     padding: 20px ;
-    background-color: lightcoral;
+    background-color: lightsalmon;
     text-align: center;
     font-size: 2rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button{
+    position: relative;
+    left: 45%;
 }
