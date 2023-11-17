@@ -1,2 +1,12 @@
-<p>This is the server component. The ID of the server is {{serverId}} and its current status is {{getServerStatus()}}</p>
-<button class="btn btn-primary" [disabled]="!allowAddServer">Add Server</button>
+<div class="serverContainer">
+    <p>This is the server component. The ID of the server is {{serverId}} and its current status is
+        {{getServerStatus()}}</p>
+    <input type="text" class="serverName" (input)="addServerName($event)">
+    <input type="text" class="serverName" [(ngModel)] = 'serverName'>
+    <button class="btn btn-primary" [disabled]="!allowAddServer" (click)="addServer()">Add Server</button>
+    <p>{{serverName}}</p>
+</div>
+<div class="assignmentDiv">
+    <h2>Binding Assignment </h2>
+    <binding-assignment></binding-assignment>
+</div>
